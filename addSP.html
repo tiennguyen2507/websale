@@ -11,6 +11,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
     <script src="js/data.js"></script>
+    <script src="js/addSP.js"></script>
 </head>
 <body>
     <navbar>
@@ -40,10 +41,10 @@
         <div class="container">
            <div class="addSP">
               
-               <form action="">
+               <formmm >
                     <p>thêm sản phẩm mới</p>
                    <div>
-                    <label for="addtenSP"> NHập tên sản phẩm :</label>
+                    <label  > NHập tên sản phẩm :</label>
                     <input type="text" id="addtenSP" placeholder="">
                    </div>
                    <div>
@@ -52,24 +53,27 @@
                    </div>
                     <div>
                         <label for="">Lựa chọn danh mục</label>
-                        <select name="add" id="">
+                        <select name="add" id="" onchange="addselect(this)">
                             <option value="phone">Điện thoại</option>
                             <option value="houseware">Hàng gia dụng</option>
                             <option value="quanAo"> Quần áo</option>
                         </select>
                     </div>
                     <div>
-                        <label for="addtenSP"> Đánh giá chất lượng :</label>
+                        <label > Đánh giá chất lượng :</label>
                         <input type="text" id="addrate" placeholder="từ 1 đến 5 sao">
                     </div>
                     <div>
-                        <label for="addtenSP"> Mô tả sản Phẩm :</label>
+                        <label > Mô tả sản Phẩm :</label>
                         <input type="text" id="addtitle" placeholder="">
                     </div>
-                    <input type="file" id="addfile">
- 
-                  
-               </form>
+                    <div>
+                        <label > Thêm link sản phẩm:</label>
+                        <input type="text" id="addimage" placeholder="">
+                    </div>
+                    <button onclick="addSP()">Thêm sản phẩm</button>
+               </formmm>
+               
 
 
            </div>
@@ -78,8 +82,5 @@
     </addSP>
     
 </body>
-        <script>  
-            var img = document.getElementById("addfile").src
-            console.log(img)
-        </script>
+        
 </html>
