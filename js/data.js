@@ -39,7 +39,39 @@ var data= [
     rate:5,
     title:"bàn là chính hảng panasonic",
     image:"image/SP/banla.jpg"
-    }
+    },
+    {id:'6',
+    category:"houseware",
+    nameSP: " ti vi OLED",
+    price: 1000000,
+    rate:5,
+    title:"ti vi oled chính hảng sam sung",
+    image:"image/SP/tivi.png"
+    },
+    {id:'7',
+    category:"houseware",
+    nameSP: " máy quạt cao cấp",
+    price: 1000000,
+    rate:5,
+    title:"máy quạt đứng cao cấp",
+    image:"image/SP/mayquat.jpg"
+    },
+    {id:'8',
+    category:"houseware",
+    nameSP: " bình nóng lạnh",
+    price: 1000000,
+    rate:5,
+    title:"bình nước nóng lạnh ",
+    image:"image/SP/binhNuocNong.jpg"
+    },
+    {id:'9',
+    category:"houseware",
+    nameSP: " nồi cơm điện",
+    price: 1000000,
+    rate:5,
+    title:"nồi cơm điện nhật bản",
+    image:"image/SP/noicom.jpg"
+    },
 ]
  var local = localStorage.setItem('data',JSON.stringify(data))
  

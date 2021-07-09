@@ -11,8 +11,9 @@
     <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
     <script src="js/data.js"></script>
+    
 </head>
-<body>
+<body onload="ShowSPFS(data)">
     <navbar>
         <div class="container-fluid" style="background-color:   brown;">
             
@@ -49,7 +50,7 @@
                     <option value="default">-Tất cả sản Phẩm-</option>
                     <option value="phone">-điện thoại-</option>
                     <option value="houseware">-Hàng gia dụng-</option>
-                    <option value="3">-quần áo-</option>
+                    <option value="quanAo">-quần áo-</option>
                 </select>
                 <ul id="showSP"></ul>
             </div>
@@ -59,7 +60,7 @@
     <showSP>
         <div class="container">
             <div class="showSP">
-                <div class="row">
+                <div class="row"  id="showSPHTML" >
                     <div class="card col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
                         <div>
                             <img src="image/SP/iphone5.jpg" alt="">
@@ -76,18 +77,34 @@
                             <button>Mua ngay</button>
                         </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        tien nguyễn
+                    <div class="card col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+                        <div>
+                            <img src="image/SP/iphone5.jpg" alt="">
+                            <a href="">tên sản phẩm</a>
+                            <p>1000.000.000VND</p>
+                            <button>Mua ngay</button>
+                        </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        tien nguyễn
+                    <div class="card col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+                        <div>
+                            <img src="image/SP/iphone5.jpg" alt="">
+                            <a href="">tên sản phẩm</a>
+                            <p>1000.000.000VND</p>
+                            <button>Mua ngay</button>
+                        </div>
                     </div>
+                    
                 </div>
                 
                
             </div>
         </div>
     </showSP>
+    <div >
+
+    </div>
+    
+    
 
 
     

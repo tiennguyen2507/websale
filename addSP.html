@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDSP</title>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/addSP.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+</head>
+<body>
+    <navbar>
+        <div class="container-fluid" style="background-color:   brown;">
+            
+            <div class="container" >
+                <div class="container">
+                    <div class="navbar">
+                        <ul>
+                            <li>điện thoại</li>
+                            <li>hàng gia dụng</li>
+                            <li>quần áo</li>
+                        </ul>
+                        <div>
+                            <input type="text">
+                            <i class="fas fa-search-dollar    "></i>
+                        </div>
+                        <i class="fas fa-cart-plus"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+    <addSP>
+        
+        <div class="container">
+           <div class="addSP">
+              
+               <form action="">
+                    <p>thêm sản phẩm mới</p>
+                   <div>
+                    <label for="addtenSP"> NHập tên sản phẩm :</label>
+                    <input type="text" id="addtenSP" placeholder="">
+                   </div>
+                   <div>
+                    <label for="">Nhập giá sản phẩm   :</label>
+                    <input type="text" id="addgiaSP" placeholder="">
+                   </div>
+                    <div>
+                        <label for="">Lựa chọn danh mục</label>
+                        <select name="add" id="">
+                            <option value="phone">Điện thoại</option>
+                            <option value="houseware">Hàng gia dụng</option>
+                            <option value="quanAo"> Quần áo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="addtenSP"> Đánh giá chất lượng :</label>
+                        <input type="text" id="addrate" placeholder="từ 1 đến 5 sao">
+                    </div>
+                    <div>
+                        <label for="addtenSP"> Mô tả sản Phẩm :</label>
+                        <input type="text" id="addtitle" placeholder="">
+                    </div>
+                    <input type="file" id="addfile">
+ 
+                  
+               </form>
+
+
+           </div>
+        </div>
+        
+    </addSP>
+    
+</body>
+        <script>  
+            var img = document.getElementById("addfile").src
+            console.log(img)
+        </script>
+</html>
