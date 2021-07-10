@@ -8,30 +8,9 @@ var data= [
     image:"image/SP/iphone5.jpg"
 
     },
-    {id:'2',
-    category: "phone",
-    nameSP: " Apple iphone 6",
-    price: 4000000,
-    rate:5,
-    title:"apple giá rẻ chính hãng",
-    image:"image/SP/iphone6.jpg"
-    },
-    {id:'3',
-    category: "phone",
-    nameSP: " Apple iphone 7",
-    price: 5000000,
-    rate:5,
-    title:"apple giá rẻ chính hãng",
-    image:"image/SP/iphone7.jpg"
-    },
-    {id:'4',
-    category:"phone",
-    nameSP: " Apple iphone x",
-    price: 7000000,
-    rate:5,
-    title:"apple giá rẻ chính hãng",
-    image:"image/SP/iphonex.jpg"
-    },
+    
+    
+    
     {id:'5',
     category:"houseware",
     nameSP: " Bàn là hơi nước",
@@ -56,6 +35,14 @@ var data= [
     title:"máy quạt đứng cao cấp",
     image:"image/SP/mayquat.jpg"
     },
+    {id:'3',
+    category: "phone",
+    nameSP: " Apple iphone 7",
+    price: 5000000,
+    rate:5,
+    title:"apple giá rẻ chính hãng",
+    image:"image/SP/iphone7.jpg"
+    },
     {id:'8',
     category:"houseware",
     nameSP: " bình nóng lạnh",
@@ -64,6 +51,14 @@ var data= [
     title:"bình nước nóng lạnh ",
     image:"image/SP/binhNuocNong.jpg"
     },
+    {id:'4',
+    category:"phone",
+    nameSP: " Apple iphone x",
+    price: 7000000,
+    rate:5,
+    title:"apple giá rẻ chính hãng",
+    image:"image/SP/iphonex.jpg"
+    },
     {id:'9',
     category:"houseware",
     nameSP: " nồi cơm điện",
@@ -71,6 +66,14 @@ var data= [
     rate:5,
     title:"nồi cơm điện nhật bản",
     image:"image/SP/noicom.jpg"
+    },
+    {id:'2',
+    category: "phone",
+    nameSP: " Apple iphone 6",
+    price: 4000000,
+    rate:5,
+    title:"apple giá rẻ chính hãng",
+    image:"image/SP/iphone6.jpg"
     },
 ]
  var local =localStorage.setItem('data',JSON.stringify(data))

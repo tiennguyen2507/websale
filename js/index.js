@@ -18,6 +18,10 @@ setInterval(slideimage,2000)
    
 // -----------------------------------
 
+
+
+
+
 function selectSP(obj){
     var value =obj.value
     console.log(value)
@@ -47,7 +51,7 @@ function ShowSPFS(data){
                         <img src=${value.image} alt="">
                         <a href="">${value.nameSP}</a>
                         <p>${value.price}VND</p>
-                        <button onclick="addcard01('${value.nameSP}',${value.price},'${value.image}')" >Mua ngay</button>
+                        <button class="buyBT" onclick="addcard01('${value.nameSP}',${value.price},'${value.image}')" >Mua ngay</button>
                     </div> 
                 </div>`
     }).join('')
@@ -55,8 +59,8 @@ function ShowSPFS(data){
    
    
 }
-var    localdataCart = localStorage.getItem('dataCart')
-         dataCart = JSON.parse(localdataCart)   
+
+
 
 var dataCart =[]
 function addcard01(name,price,image) {
@@ -72,9 +76,10 @@ function addcard01(name,price,image) {
         }
     )
     localStorage.setItem('dataCart',JSON.stringify(dataCart))
-    console.log(dataCart)
     
+    document.getElementById("SLcard").innerHTML=dataCart.length
 }
+
 
 
 
