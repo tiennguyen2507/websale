@@ -6,11 +6,7 @@ var data= [
     rate:5,
     title:"apple giá rẻ chính hãng",
     image:"image/SP/iphone5.jpg"
-
     },
-    
-    
-    
     {id:'5',
     category:"houseware",
     nameSP: " Bàn là hơi nước",
