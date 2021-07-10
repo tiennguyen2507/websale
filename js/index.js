@@ -13,7 +13,9 @@ setInterval(slideimage,2000)
 ////get local///--------------------------------
  var localdata=localStorage.getItem('data')
    data = JSON.parse(localdata)
-   console.log(data)
+
+        
+   
 // -----------------------------------
 
 function selectSP(obj){
@@ -45,11 +47,49 @@ function ShowSPFS(data){
                         <img src=${value.image} alt="">
                         <a href="">${value.nameSP}</a>
                         <p>${value.price}VND</p>
-                        <button>Mua ngay</button>
+                        <button onclick="addcard01('${value.nameSP}',${value.price},'${value.image}')" >Mua ngay</button>
                     </div> 
                 </div>`
     }).join('')
     document.getElementById("showSPHTML").innerHTML = showSP
-    console.log(showSP)
+   
    
 }
+var    localdataCart = localStorage.getItem('dataCart')
+         dataCart = JSON.parse(localdataCart)   
+
+var dataCart =[]
+function addcard01(name,price,image) {
+    var Sluong = 1
+    var Tongtien =Sluong * price
+    dataCart.push(
+        { name: name,
+          price: price,
+          SL: Sluong,
+          TT: Tongtien,
+          image: image  
+
+        }
+    )
+    localStorage.setItem('dataCart',JSON.stringify(dataCart))
+    console.log(dataCart)
+    
+}
+
+
+
+
+function seachSP(){
+    let valueseach = document.getElementById("seach").value
+    
+    let seach = data.filter(value=>value.nameSP.toUpperCase().includes(valueseach.toUpperCase()))
+    console.log(seach)
+    ShowSPFS(seach)
+}
+
+
+
+
+// ---------------------------
+
+

@@ -43,7 +43,7 @@ var data= [
     {id:'6',
     category:"houseware",
     nameSP: " ti vi OLED",
-    price: 1000000,
+    price: 3500000,
     rate:5,
     title:"ti vi oled chính hảng sam sung",
     image:"image/SP/tivi.png"
@@ -51,7 +51,7 @@ var data= [
     {id:'7',
     category:"houseware",
     nameSP: " máy quạt cao cấp",
-    price: 1000000,
+    price: 450000,
     rate:5,
     title:"máy quạt đứng cao cấp",
     image:"image/SP/mayquat.jpg"
@@ -59,7 +59,7 @@ var data= [
     {id:'8',
     category:"houseware",
     nameSP: " bình nóng lạnh",
-    price: 1000000,
+    price: 1500000,
     rate:5,
     title:"bình nước nóng lạnh ",
     image:"image/SP/binhNuocNong.jpg"
@@ -67,11 +67,11 @@ var data= [
     {id:'9',
     category:"houseware",
     nameSP: " nồi cơm điện",
-    price: 1000000,
+    price: 600000,
     rate:5,
     title:"nồi cơm điện nhật bản",
     image:"image/SP/noicom.jpg"
     },
 ]
- var local = localStorage.setItem('data',JSON.stringify(data))
+ var local =localStorage.setItem('data',JSON.stringify(data))
  

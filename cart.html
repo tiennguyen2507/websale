@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>websale</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="js/dataCart.js"></script>
+    
+    
+</head>
+<body onload="showcart(data)">
+    <navbar>
+        <div class="container-fluid" style="background-color:   brown;">
+            
+            <div class="container" >
+                <div class="container">
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="http://127.0.0.1:5500/index.html">Trang chủ</a></li>
+                            
+                        </ul>
+                        <div>
+                            <input type="text" id="seach">
+                            <i class="fas fa-search-dollar" onclick="seachSP()"></i>
+                        </div>
+                        <i class="fas fa-cart-plus"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+    <tagtable>
+        <div class="container">
+             <div class="tagtable">
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col"> hình ảnh</th>
+                        <th scope="col">tên sản phẩm</th>
+                        <th scope="col">số lượng</th>
+                        <th scope="col">đơn giá</th>
+                        <th scope="col">thành tiền</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody id="showcart">
+                      
+                      
+                     
+                    </tbody>
+                  </table>
+             </div>
+             <div  style="text-align: right;margin: 30px;">
+                <button type="button" class="btn btn-primary" onclick="pay()">Thanh toán</button>
+
+             </div>
+             
+        </div>
+        
+    </tagtable>
+</body>
