@@ -6,6 +6,7 @@
 .navbartop {
     display: flex;
     justify-content: space-between;
+
 }
 .navbartop ul{
     display: flex;
@@ -24,6 +25,7 @@
    
    
 }
+
 
 
 
@@ -87,6 +89,7 @@
     height: 300px;
     margin: 15px 0px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .selectSP select{
     border: 1px solid rgb(133, 115, 115);
@@ -102,6 +105,7 @@
     color: rgb(175, 76, 76);
     font-weight: bold;
     padding-bottom: 10px;
+   
 
 }
 .selectSP{
@@ -112,6 +116,8 @@
     display: flex;
    
     align-items: center;
+    
+    
 
 }
 .selectSP ul{
@@ -132,12 +138,18 @@
 .card div img{
    width: 100%;
    min-height: 265px;
-   padding: 40px;
+   padding: 30px;
 }
 .card div a{
     color: black;
     font-weight: bolder;
     
+}
+.card div{
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    border-radius: 10px;
 }
 .card div p{
     color: red;
@@ -159,13 +171,23 @@
     transition: 0,5s;
 
 }
+.showSP{
+    box-shadow: rgba(0, 0, 0, 0.158) 0px 5px 15px;
+}
+.showSP{
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 .card{
     padding: 0px;
     
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     border: 0px;
     width: 110%;
+    
 }
 .footer{
     text-align: center;

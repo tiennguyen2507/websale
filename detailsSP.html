@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>websale</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <link rel="stylesheet" href="css/detailsSP.css">
+    
+</head>
+<body onload="ShowSPFS(data)">
+    <navbartop>
+        <div class="container-fluid" style="background-color:   rgb(133, 23, 23);">
+            
+            <div class="container" >
+               <div class="navbartop">
+                   <ul class="left">
+                       <li>
+                           <a>Hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a>Trở thành người bán</a>
+                         </li>
+                    </ul>
+                     <ul class=" right" id="loginindex">
+                         <li> 
+                             <a href="login.html" >
+                                Đăng nhập
+                             </a>
+                         </li>
+                         <li> 
+                            <a href="create.html" >
+                               Đăng ký
+                            </a>
+                        </li>
+
+                    </ul>
+               </div>
+
+
+            </div>
+        </div>
+
+    </navbartop>
+    <navbar>
+        <div class="container-fluid" style="background-color:   brown;">
+            
+            <div class="container" >
+                <div class="container">
+                    <div class="navbar">
+                        <ul >
+                            <li>
+                                <a href="index.html">
+                                    <img src="image/logo.png" alt="">
+                                </a>
+                            </li>
+                           
+                        </ul >
+                        <div>
+                            <input type="text" id="seach">
+                            <i class="fas fa-search-dollar" onclick="seachSP()"></i>
+                        </div>
+                        <a href="cart.html">
+                            <i class="fas fa-cart-plus"></i>
+                            <p id="SLcard">0</p>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+    <detailsSP>
+        <div class="container">
+            <div class="detailsSP">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <img src="image/SP/iphone7.jpg" alt="">
+                    </div>
+                    
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <h1>Iphone 7 chính hãng</h1>
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                         <h2>50000000vnd</h2>
+                         <div>
+                             <p>mô tả</p>
+                         </div>
+                         <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Mua ngay</button>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+    </detailsSP>
