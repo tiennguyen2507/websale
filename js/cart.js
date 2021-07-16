@@ -56,6 +56,6 @@ function pay(){
     var dataCart =[]
     localStorage.setItem('dataCart',JSON.stringify(dataCart))
     alert('thanh toán thành công')
-    window.location.href = "http://127.0.0.1:5500/cart.html";
+    window.location.href = "cart.html";
     
 }
