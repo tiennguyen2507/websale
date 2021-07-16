@@ -21,11 +21,40 @@ function showcart() {
                 </tr> `
     }).join('')
     document.getElementById("showcart").innerHTML= cart
+    if (login[0].status ==true ) {
+        var login01 = ` <li> 
+                             <a  >
+                                    ${login[0].name}
+                              </a>
+                         </li>
+                         <li> 
+                             <a  href="index.html"  onclick = 'logout()' >
+                                      Đăng xuất
+                             </a>
+                          </li>`
+         document.getElementById('loginindex').innerHTML = login01
+     }
     
 }
+function logout(){
+    var data = [{
+        name:login[0].name,
+              pass:login[0].pass,
+              phone:login[0].phone,
+              address:login[0].address,
+              status:false  
+    }
+    ]
+    console.log(data)
+    var local =localStorage.setItem('login',JSON.stringify(data))
+    window.location.href = "index.html"
+
+     
+ }
 showcart(data)
 function pay(){
-    localStorage.removeItem('dataCart')
+    var dataCart =[]
+    localStorage.setItem('dataCart',JSON.stringify(dataCart))
     alert('thanh toán thành công')
     window.location.href = "http://127.0.0.1:5500/cart.html";
     

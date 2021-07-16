@@ -13,7 +13,13 @@ setInterval(slideimage,2000)
 ////get local///--------------------------------
  var localdata=localStorage.getItem('data')
    data = JSON.parse(localdata)
-
+   var locallogin=localStorage.getItem('login')
+   login = JSON.parse(locallogin)
+   console.log(login)
+   var localcart=localStorage.getItem('dataCart')
+   dataCart01 = JSON.parse(localcart)
+   
+   console.log(dataCart01)
         
    
 // -----------------------------------
@@ -56,18 +62,54 @@ function ShowSPFS(data){
                 </div>`
     }).join('')
     document.getElementById("showSPHTML").innerHTML = showSP
-   
+
+    if (login[0].status ==true) {
+        document.getElementById("SLcard").innerHTML= dataCart01.length
+    }
+    
+
+    if (login[0].status ==true ) {
+       var login01 = ` <li> 
+                            <a  >
+                                   ${login[0].name}
+                             </a>
+                        </li>
+                        <li> 
+                            <a  href="index.html"  onclick = 'logout()' >
+                                     Đăng xuất
+                            </a>
+                         </li>`
+        document.getElementById('loginindex').innerHTML = login01
+    }
+    
+    
    
 }
+ function logout(){
+    var data = [{
+        name:login[0].name,
+              pass:login[0].pass,
+              phone:login[0].phone,
+              address:login[0].address,
+              status:false
+    }
+    ]
+    console.log(data)
+    var local =localStorage.setItem('login',JSON.stringify(data))
+    window.location.href = "index.html"
+
+     
+ }
 
 
 
-var dataCart =[]
+var dataCart =dataCart01
 function addcard01(name,price,image) {
-    alert(' Đã thêm vào giỏ hàng :' +name)
-    var Sluong = 1
-    var Tongtien =Sluong * price
-    dataCart.push(
+    if (login[0].status ==true) {
+        alert(' Đã thêm vào giỏ hàng :' +name)
+        var Sluong = 1
+        var Tongtien =Sluong * price
+        dataCart.push(
         { name: name,
           price: price,
           SL: Sluong,
@@ -75,10 +117,19 @@ function addcard01(name,price,image) {
           image: image  
 
         }
-    )
-    localStorage.setItem('dataCart',JSON.stringify(dataCart))
+        )
+   
     
-    document.getElementById("SLcard").innerHTML=dataCart.length
+        localStorage.setItem('dataCart',JSON.stringify(dataCart))
+        document.getElementById("SLcard").innerHTML= dataCart01.length
+        
+        
+        }
+    else(
+        alert('vui lòng đăng nhập')
+    )
+    
+   
 }
 
 

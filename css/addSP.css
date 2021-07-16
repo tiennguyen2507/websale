@@ -41,7 +41,7 @@
     
    
 }
-.addSP form p{
+.addSP formmm p{
     font-size: 40px;
     color: brown;
     font-weight: bold   ;
@@ -55,6 +55,7 @@
 }
 .addSP formmm div{
     width: 70%;
+    padding-bottom: 30px;
 }
 .addSP formmm div input{
     border-radius: 5px;

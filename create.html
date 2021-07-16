@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADDSP</title>
+    <title>Đăng ký</title>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/addSP.css">
@@ -13,6 +13,7 @@
     <script src="js/data.js"></script>
     <script src="js/addSP.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/create.js"></script>
 </head>
 <body>
     <navbar>
@@ -49,36 +50,24 @@
            <div class="addSP">
               
                <formmm >
-                    <p>thêm sản phẩm mới</p>
+                    <p>Đăng Ký</p>
                    <div>
-                    <label  > NHập tên sản phẩm :</label>
-                    <input type="text" id="addtenSP" placeholder="">
+                    <label  > Tên đăng nhập :</label>
+                    <input type="text" id="ipName" placeholder="">
                    </div>
                    <div>
-                    <label for="">Nhập giá sản phẩm   :</label>
-                    <input type="text" id="addgiaSP" placeholder="">
+                    <label for="">Mật khẩu :</label>
+                    <input type="password" id="ipPass" placeholder="">
                    </div>
-                    <div>
-                        <label for="">Lựa chọn danh mục</label>
-                        <select name="add" id="" onchange="addselect(this)">
-                            <option value="phone">Điện thoại</option>
-                            <option value="houseware">Hàng gia dụng</option>
-                            <option value="quanAo"> Quần áo</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label > Đánh giá chất lượng :</label>
-                        <input type="text" id="addrate" placeholder="từ 1 đến 5 sao">
-                    </div>
-                    <div>
-                        <label > Mô tả sản Phẩm :</label>
-                        <input type="text" id="addtitle" placeholder="">
-                    </div>
-                    <div>
-                        <label > Thêm link sản phẩm:</label>
-                        <input type="text" id="addimage" placeholder="">
-                    </div>
-                    <button onclick="addSP()">Thêm sản phẩm</button>
+                   <div>
+                    <label for="">Số điện thoại :</label>
+                    <input type="text" id="ipPhone" placeholder="">
+                   </div>
+                   <div>
+                    <label for="">Địa chỉ :</label>
+                    <input type="text" id="ipAddress" placeholder="">
+                   </div>
+                    <button onclick="create()">Đăng Ký</button>
                </formmm>
                
 
