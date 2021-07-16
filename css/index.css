@@ -132,6 +132,7 @@
 .card div img{
    width: 100%;
    min-height: 265px;
+   padding: 40px;
 }
 .card div a{
     color: black;
