@@ -64,6 +64,7 @@ function ShowSPFS(data){
 
 var dataCart =[]
 function addcard01(name,price,image) {
+    alert(' Đã thêm vào giỏ hàng :' +name)
     var Sluong = 1
     var Tongtien =Sluong * price
     dataCart.push(
