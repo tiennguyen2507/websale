@@ -139,6 +139,7 @@
    width: 100%;
    min-height: 265px;
    padding: 30px;
+   max-height: 265px;
 }
 .card div a{
     color: black;
@@ -150,6 +151,7 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 10px;
     border-radius: 10px;
+    min-height: 407px;
 }
 .card div p{
     color: red;
