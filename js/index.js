@@ -15,11 +15,11 @@ setInterval(slideimage,2000)
    data = JSON.parse(localdata)
    var locallogin=localStorage.getItem('login')
    login = JSON.parse(locallogin)
-   console.log(login)
+//    console.log(login)
    var localcart=localStorage.getItem('dataCart')
    dataCart01 = JSON.parse(localcart)
    
-   console.log(dataCart01)
+//    console.log(dataCart01)
         
    
 // -----------------------------------
@@ -48,14 +48,14 @@ function selectSP(obj){
     }else{
         ShowSPFS(show)
     }
-}
+}   
 var showSP = []
 function ShowSPFS(data){
     showSP = data.map(value=>{
         return ` <div class="card col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
                     <div>
                         <img src=${value.image} alt="">
-                        <a href="">${value.nameSP}</a>
+                        <a href="detailsSP.html" onclick="adddetailsSP(${value.id})">${value.nameSP}</a>
                         <p>${value.price}VND</p>
                         <button class="buyBT" onclick="addcard01('${value.nameSP}',${value.price},'${value.image}')" >Mua ngay</button>
                     </div> 
@@ -130,6 +130,11 @@ function addcard01(name,price,image) {
     )
     
    
+}
+function adddetailsSP(id) {
+    var detailsSP = [id]
+    localStorage.setItem('detailsSP',detailsSP)
+    
 }
 
 

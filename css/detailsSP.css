@@ -12,9 +12,11 @@
 .detailsSP div div div{
     width: 100%;
     height: 150px;
-    background-color: cadetblue;
+    background-color: rgb(210, 232, 233);
     margin: 20px 0;
     padding: 10px;
+    overflow-y: scroll;
+    border-radius: 10px;
 }
 .detailsSP div div h2{
     margin: 10px 0px;
@@ -31,4 +33,8 @@
     background-color: rgb(238, 82, 82);
     font-size: 30px;
     border-radius: 10px;
+    font-weight: bold;
+}
+.detailsSP div div span i{
+    color: red;
 }
