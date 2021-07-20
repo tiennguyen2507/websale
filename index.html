@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>websale</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/bootstrap.min.js"></script>
@@ -15,27 +18,27 @@
 </head>
 <body onload="ShowSPFS(data)">
     <navbartop>
-        <div class="container-fluid" style="background-color:   rgb(133, 23, 23);">
+        <div class="container-fluid" style="background-color:   #f3f3f3;padding: 0px;">
             
             <div class="container" >
                <div class="navbartop">
                    <ul class="left">
                        <li>
-                           <a>Hỗ trợ</a>
+                           <a><i class="fas fa-headphones"></i>Hỗ trợ</a>
                         </li>
                         <li>
-                            <a>Trở thành người bán</a>
+                            <a><i class="fa fa-heart"></i>Trở thành người bán</a>
                          </li>
                     </ul>
                      <ul class=" right" id="loginindex">
                          <li> 
                              <a href="login.html" >
-                                Đăng nhập
+                                <i class="fa fa-user"></i> Đăng nhập
                              </a>
                          </li>
                          <li> 
                             <a href="create.html" >
-                               Đăng ký
+                                <i class="fa fa-user"></i> Đăng ký
                             </a>
                         </li>
 
@@ -48,7 +51,7 @@
 
     </navbartop>
     <navbar>
-        <div class="container-fluid" style="background-color:   brown;">
+        <div class="container-fluid" style="background-color:#fcfcfc;padding:10px 0px;">
             
             <div class="container" >
                 <div class="container">
@@ -63,7 +66,7 @@
                         </ul >
                         <div>
                             <input type="text" id="seach">
-                            <i class="fas fa-search-dollar" onclick="seachSP()"></i>
+                            <i class="fas fa-search-dollar" onclick="seachSP()" style="font-size: 25px;padding-top: 10px;"></i>
                         </div>
                         <a href="cart.html">
                             <i class="fas fa-cart-plus"></i>
@@ -76,7 +79,7 @@
         </div>
     </navbar>
     <slide>
-        <div class="container">
+        <div class="container-fluid" style="padding: 0px;">
             <div class="slide">
                 <img id="slideimage" src="image/banner03.jpg" alt="">
             </div>
@@ -97,7 +100,7 @@
         </div>
     </selectSP>
     <showSP>
-        <div class="container">
+        <div class="container" >
             <div class="showSP">
                 <div class="row"  id="showSPHTML" >
                     <div class="card col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
@@ -140,11 +143,59 @@
         </div>
     </showSP>
     <footer>
-        <div class="container-fluid" style="background-color: rgb(175, 76, 76);">
-            <div class="footer">
-                <p>thực hiện bởi:tiennguyen</p>
+        <div class="container-fluid" style="background-color: rgb(236, 236, 236);">
+            <div class="container"> 
+                <div class="row">
+                
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="footer_one">
+                        <img src="image/logo.png" alt="">
+                        <p>Sản phẩm của shop chúng tôi đều là hàng thật đảm bảo chất lượng 100%. Chúng tôi hỗ trợ quý khách kiểm tra hàng hóa bằng bất cứ phương thức nào. Nếu có hàng giả, chúng tôi nguyện bồi hoàn gấp 100 lần cho quý khách. Quý khách hãy yên tâm mua sắm.</p>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                     <div class="footer_two">
+                          <h1>Danh mục sản Phẩm</h1>  
+                          <p> Điện thoại</p>      
+                          <p>Đồ Gia dụng</p>     
+                          <p>Quần Áo</p>   
+
+                     </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="footer_two">
+                        <h1>Thanh Toán</h1>  
+                        <p> Thanh toán khi nhận hàng</p>      
+                        <p>Chuyển khoản trực tiếp</p>     
+                        <p>trả góp lãi xuất thấp</p>   
+
+                   </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="footer_four">
+                        <h1>Góp ý</h1>
+                        <p>Mọi ý kiến đóng góp,phản ánh cũng như thức mắt xin liên hệ qua các phướng thức sau:</p>
+                        <div>
+                            <i class="fas fa-phone-square"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-map-marked-alt"></i>
+
+                        </div>
+                   
+                    </div>
+                </div>
+                
+            </div>
+
             </div>
             
+           
+            
+            
+        </div>
+        <div class="foooter_down">
+           <p> thực hiện bỏi:Nguyễn Lê Đình Tiên</p>
         </div>
     </footer>
     <!-- <img src="image/SP/aopolo.jpg" alt=""> -->

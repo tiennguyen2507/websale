@@ -3,6 +3,9 @@
     margin: 0px;
     border: 0px;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .navbartop {
     display: flex;
     justify-content: space-between;
@@ -16,11 +19,11 @@
 .navbartop ul li{
     list-style-type: none;
     padding: 5px 10px;
-    color: white;
+    color: #888;
 }
 .navbartop ul li a{
-    font-size: 20px;
-    color: white;
+    font-size: 15px;
+    color: #888;
    
    
    
@@ -37,7 +40,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #888;
     margin: 0px;
 }
 .navbar ul{
@@ -59,25 +62,29 @@
     margin: 0px;
     padding-left: 10px;
     
-    color: rgb(255, 255, 255);
-    font-size: 25px;
+    color: #888;
+    font-size: 20px;
 }
 .navbar ul li a img{
-    width: 50px;
+    width: 150px;
     
     
 }
 .navbar ul :hover{
-    color: red;
+    color: #f3f3f3;
 }
 .navbar div{
     width: 50%;
 }
 .navbar div input{
     border-radius: 5px;
-    height: 30px;
-    width: 80%;
+    height: 50px;
+    width: 70%;
     padding-left: 10px;
+    color: #888;
+    ;
+    
+    border: 1px solid #888;
 }
 .navbar div button{
     height: 30px;
@@ -86,19 +93,19 @@
 
 .slide img{
     width: 100%;
-    height: 300px;
-    margin: 15px 0px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 500px;
+    /* margin:5px 0px; */
+    /* border-radius: 10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .selectSP select{
-    border: 1px solid rgb(133, 115, 115);
+    border: 1px solid #888;
     text-align: center;
-    color: tomato;
+    color: rgb(110, 110, 110);
     font-weight: bolder;
     padding-left: 10px;
     border-radius: 5px;
-    height: 40px;
+    height: 50px;
 }
 .selectSP select option{
     text-align: center;
@@ -109,10 +116,10 @@
 
 }
 .selectSP{
-    background-color: brown;
-    border-radius: 5px;
+    background-color: #f3f3f3;
+    /* border-radius: 5px; */
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin: 15px 0px;
     display: flex;
    
     align-items: center;
@@ -131,18 +138,19 @@
     padding-left: 10px;
 }
 .selectSP ul li a{
-    color: white;
+    color:   #888;
+    
 
 }
 
 .card div img{
    width: 100%;
-   min-height: 265px;
-   padding: 30px;
+   min-height: 140px;
+   padding: 2px;
    max-height: 265px;
 }
 .card div a{
-    color: black;
+    color: rgb(82, 81, 81);
     font-weight: bolder;
     
 }
@@ -150,12 +158,12 @@
     margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 10px;
-    border-radius: 10px;
-    min-height: 407px;
+    /* border-radius: 10px; */
+    min-height:330px;
 }
 .card div p{
-    color: red;
-    font-weight: bold;
+    color: rgb(102, 95, 163);
+    font-weight: bold;  
     margin-bottom: 0px;
     padding: 10px 0px;
 }
@@ -163,23 +171,21 @@
     border-radius: 5px;
     width: 100px;
     height: 30px;
-    color: red;
+    color: rgb(116, 113, 113);
     font-weight: bold;
     padding-bottom: 10px;
     
 }
 .card div:hover button  {
-    color: rgb(32, 14, 192);
+    color: rgb(252, 0, 0);
     transition: 0,5s;
 
 }
-.showSP{
-    box-shadow: rgba(0, 0, 0, 0.158) 0px 5px 15px;
-}
+
 .showSP{
     padding: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;    
+    /* border-radius: 10px; */
     margin-bottom: 10px;
 }
 .card{
@@ -191,18 +197,58 @@
     width: 110%;
     
 }
-.footer{
-    text-align: center;
+.footer_one{
     padding: 10px;
-   
 }
-.footer p{
+.footer_one img{
+    width: 150PX;
+    padding: 10px 0px;
+}
+.footer_one p{
+    font-size: 15px;
+}
+.footer_two{
+    padding: 10px;
+    padding-top: 20px;
+}
+.footer_two h1{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.footer_two p{
+    width: 100%;
+    border-bottom: 1px dotted black;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+.footer_four{
+    padding: 10px;
+    padding-top: 20px;
+}
+.footer_four h1{
+    font-size: 25px ;
+    padding-bottom: 15px;
+
+}
+.footer_four p{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+.footer_four div i{
+    font-size: 30px;
+    padding-right: 20px;
+}
+.foooter_down{
+    text-align: center;
+}
+.foooter_down p{
     margin: 0px;
     font-weight: bolder;
+    padding: 3px;
 }
 
-
-@media only screen and (max-width: 980px) {
+/* @media only screen and (max-width: 980px) {
     .navbar div{
         width: 90%;
     }
@@ -217,4 +263,71 @@
     .slide img{
         height: 200px;
     }
+} */
+@media only screen and (max-width: 576px){
+    .slide img{
+        height: 200px;
+    }
+    .navbar div{
+        width: 80%;
+    }
+    .navbar div input{
+        width: 80%;  
+    }
+     .navbar ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+    }
+}
+
+/* //taplet -may tinh ban */
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .slide img{
+        height: 200px;
+    }
+    .navbar div{
+        width: 50%;
+    }
+    .navbar div input{
+        width: 80%;  
+    }
+    .card div{
+        
+        height:345px;
+    }
+    .card div img{
+        
+        height:203px;
+    }
+    
+}
+/* //Medium */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .navbar div{
+        width: 50%;
+    }
+    .navbar div input{
+        width: 80%;  
+    }
+    
+    .slide img{
+        height: 300px;
+    }
+    .card div{
+        
+        height:330px;
+    }
+    
+
+}
+/* //PC-laptop */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .card div a{
+            
+        height:203px;
+    }
+
+}
+@media only screen and (min-width: 1200px){
 }

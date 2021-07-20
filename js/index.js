@@ -30,7 +30,7 @@ setInterval(slideimage,2000)
 
 function selectSP(obj){
     var value =obj.value
-    console.log(value)
+    // console.log(value)
     var show=[]
     for (let i = 0; i < data.length; i++) {
         if (value == data[i].category) {
@@ -52,7 +52,7 @@ function selectSP(obj){
 var showSP = []
 function ShowSPFS(data){
     showSP = data.map(value=>{
-        return ` <div class="card col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+        return ` <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-2 ">
                     <div>
                         <img src=${value.image} alt="">
                         <a href="detailsSP.html" onclick="adddetailsSP(${value.id})">${value.nameSP}</a>
