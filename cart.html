@@ -19,27 +19,27 @@
 </head>
 <body onload="showcart(data)">
     <navbartop>
-        <div class="container-fluid" style="background-color:   rgb(133, 23, 23);">
+        <div class="container-fluid" style="background-color:   #f3f3f3;padding: 0px;">
             
             <div class="container" >
                <div class="navbartop">
                    <ul class="left">
                        <li>
-                           <a>Hỗ trợ</a>
+                           <a><i class="fas fa-headphones"></i>Hỗ trợ</a>
                         </li>
                         <li>
-                            <a>Trở thành người bán</a>
+                            <a><i class="fa fa-heart"></i>Trở thành người bán</a>
                          </li>
                     </ul>
                      <ul class=" right" id="loginindex">
                          <li> 
                              <a href="login.html" >
-                                Đăng nhập
+                                <i class="fa fa-user"></i> Đăng nhập
                              </a>
                          </li>
                          <li> 
                             <a href="create.html" >
-                               Đăng ký
+                                <i class="fa fa-user"></i> Đăng ký
                             </a>
                         </li>
 
@@ -52,26 +52,28 @@
 
     </navbartop>
     <navbar>
-        <div class="container-fluid" style="background-color:   brown;">
+        <div class="container-fluid" style="background-color:#fcfcfc;padding:10px 0px;">
             
             <div class="container" >
                 <div class="container">
                     <div class="navbar">
-                        <ul>
+                        <ul >
                             <li>
                                 <a href="index.html">
                                     <img src="image/logo.png" alt="">
                                 </a>
                             </li>
                            
-                            
-                        </ul>
+                        </ul >
                         <div>
                             <input type="text" id="seach">
-                            <i class="fas fa-search-dollar" onclick="seachSP()"></i>
+                            <i class="fas fa-search-dollar" onclick="seachSP()" style="font-size: 25px;padding-top: 10px;"></i>
                         </div>
-                        <i class="fas fa-cart-plus"></i>
-
+                        <a href="cart.html">
+                            <i class="fas fa-cart-plus"></i>
+                            <p id="SLcard">0</p>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
@@ -82,7 +84,7 @@
              <div class="tagtable">
                 <table class="table">
                     <thead class="thead-dark">
-                      <tr>
+                      <tr class="tableTR">
                         <th scope="col">STT</th>
                         <th scope="col"> hình ảnh</th>
                         <th scope="col">tên sản phẩm</th>

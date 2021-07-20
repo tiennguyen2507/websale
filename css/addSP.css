@@ -3,47 +3,20 @@
     margin: 0px;
     border: 0px;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin: 0px;
-}
-.navbar ul{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin: 0px;
-}
-.navbar ul li{
-    list-style: none;
-    margin-left: 15px;
-}
-.navbar ul :hover{
-    color: red;
-}
-.navbar div{
-    width: 50%;
-}
-.navbar div input{
-    border-radius: 5px;
-    height: 30px;
-    width: 95%;
-    padding-left: 10px;
-}
+
 .addSP{
     max-width: 100%;
-    min-height: 700px;
-    border: 3px solid rgb(161, 49, 49);
-    border-radius: 10px;
+    border: 3px solid #f3f3f3;
+    
     margin: 40px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     
    
 }
 .addSP formmm p{
     font-size: 40px;
-    color: brown;
+    color: rgb(61, 114, 228);
     font-weight: bold   ;
 
 }
@@ -55,11 +28,11 @@
 }
 .addSP formmm div{
     width: 70%;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 .addSP formmm div input{
-    border-radius: 5px;
-    border: 1px solid black;
+   
+    background-color: #f3f3f3;
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -67,13 +40,14 @@
 .addSP formmm div label{
     font-size: 20px;
     margin-bottom: 0px;
+    font-weight: bolder;
     
-    color: brown;
+    color: rgb(0, 0, 0);
 }
 .addSP select{
     width: 100%;
-    border-radius: 5px;
-    border: 1px solid black;
+    
+    background-color: #f3f3f3;
     height: 50px;
     width: 100%;
 }
@@ -91,13 +65,14 @@
     }
 }
 .addSP formmm button{
-    margin-top: 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    width: 50%;
+    margin-top: 20px;
+    
+    
+    width: 70%;
     height: 50px;
     padding: 10px;
     font-size: 20px;
     font-weight: bolder;
-    background-color: brown;
+    background-color: #56baed;
+    color: rgb(236, 236, 236);
 }
