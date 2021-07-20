@@ -15,12 +15,9 @@ setInterval(slideimage,2000)
    data = JSON.parse(localdata)
    var locallogin=localStorage.getItem('login')
    login = JSON.parse(locallogin)
-//    console.log(login)
+   console.log(login[0].status)
    var localcart=localStorage.getItem('dataCart')
    dataCart01 = JSON.parse(localcart)
-   
-//    console.log(dataCart01)
-        
    
 // -----------------------------------
 
@@ -30,7 +27,6 @@ setInterval(slideimage,2000)
 
 function selectSP(obj){
     var value =obj.value
-    // console.log(value)
     var show=[]
     for (let i = 0; i < data.length; i++) {
         if (value == data[i].category) {
@@ -50,6 +46,7 @@ function selectSP(obj){
     }
 }   
 var showSP = []
+
 function ShowSPFS(data){
     showSP = data.map(value=>{
         return ` <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-2 ">
@@ -62,15 +59,18 @@ function ShowSPFS(data){
                 </div>`
     }).join('')
     document.getElementById("showSPHTML").innerHTML = showSP
+    
+    
+    console.log(login[0].status)
 
-    if (login[0].status ==true) {
+    if (login[0].status === true) {
         document.getElementById("SLcard").innerHTML= dataCart01.length
     }
     
-
-    if (login[0].status ==true ) {
-       var login01 = ` <li> 
-                            <a  >
+    console.log(login[0].status)
+    if (login[0].status == true ) {
+       var  login01 = `<li> 
+                             <a  >
                                    ${login[0].name}
                              </a>
                         </li>
@@ -85,6 +85,7 @@ function ShowSPFS(data){
     
    
 }
+ShowSPFS(data)
  function logout(){
     var data = [{
         name:login[0].name,
@@ -95,7 +96,7 @@ function ShowSPFS(data){
     }
     ]
     console.log(data)
-    var local =localStorage.setItem('login',JSON.stringify(data))
+    localStorage.setItem('login',JSON.stringify(data))
     window.location.href = "index.html"
 
      
@@ -103,9 +104,10 @@ function ShowSPFS(data){
 
 
 
-var dataCart =dataCart01
+
 function addcard01(name,price,image) {
-    if (login[0].status ==true) {
+    var dataCart = dataCart01
+    if (login[0].status == true) {
         alert(' Đã thêm vào giỏ hàng :' +name)
         var Sluong = 1
         var Tongtien =Sluong * price
@@ -124,7 +126,7 @@ function addcard01(name,price,image) {
         document.getElementById("SLcard").innerHTML= dataCart01.length
         
         
-        }
+    }
     else(
         alert('vui lòng đăng nhập')
     )

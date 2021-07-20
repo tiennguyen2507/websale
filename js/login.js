@@ -6,7 +6,7 @@ function login01(){
     console.log(valueName)
     valuePass = document.getElementById('ipPass').value
     console.log(valuePass)
-    if (login[0].name == valueName|| login[0].pass == valuePass) {
+    if (login[0].name == valueName && login[0].pass == valuePass) {
         alert('đăng nhập thành công')
         var data = [
             { name:login[0].name,
@@ -17,7 +17,7 @@ function login01(){
         }
         ]
         console.log(data)
-        var local =localStorage.setItem('login',JSON.stringify(data))
+        localStorage.setItem('login',JSON.stringify(data))
         setInterval(window.location.href = "index.html",10000)
         
     }else(
