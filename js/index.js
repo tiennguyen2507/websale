@@ -5,7 +5,6 @@ function slideimage(){
     index++
     if (index==4) {
         index=0
-        
     }
     document.getElementById('slideimage').src = slide[index]
 }
@@ -20,10 +19,6 @@ setInterval(slideimage,2000)
    dataCart01 = JSON.parse(localcart)
    
 // -----------------------------------
-
-
-
-
 
 function selectSP(obj){
     var value =obj.value
@@ -46,7 +41,6 @@ function selectSP(obj){
     }
 }   
 var showSP = []
-
 function ShowSPFS(data){
     showSP = data.map(value=>{
         return ` <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-2 ">
@@ -82,8 +76,6 @@ function ShowSPFS(data){
         document.getElementById('loginindex').innerHTML = login01
     }
     
-    
-   
 }
 ShowSPFS(data)
  function logout(){
@@ -97,14 +89,8 @@ ShowSPFS(data)
     ]
     console.log(data)
     localStorage.setItem('login',JSON.stringify(data))
-    window.location.href = "index.html"
-
-     
+    window.location.href = "index.html" 
  }
-
-
-
-
 function addcard01(name,price,image) {
     var dataCart = dataCart01
     if (login[0].status == true) {
