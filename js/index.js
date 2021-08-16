@@ -8,7 +8,7 @@ function slideimage(){
     }
     document.getElementById('slideimage').src = slide[index]
 }
-setInterval(slideimage,2000)
+setInterval(slideimage,4000)
 ////get local///--------------------------------
  var localdata=localStorage.getItem('data')
    data = JSON.parse(localdata)
@@ -43,7 +43,7 @@ function selectSP(obj){
 var showSP = []
 function ShowSPFS(data){
     showSP = data.map(value=>{
-        return ` <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-2 ">
+        return ` <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
                     <div>
                         <img src=${value.image} alt="">
                         <a href="detailsSP.html" onclick="adddetailsSP(${value.id})">${value.nameSP}</a>
