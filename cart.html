@@ -18,67 +18,61 @@
     
 </head>
 <body onload="showcart(data)">
-    <navbartop>
-        <div class="container-fluid" style="background-color:   #f3f3f3;padding: 0px;">
-            
-            <div class="container" >
-               <div class="navbartop">
-                   <ul class="left">
-                       <li>
-                           <a><i class="fas fa-headphones"></i>Hỗ trợ</a>
+    <div class="narbar-top-big">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="navbartop">
+                    <ul class="navbartop__item">
+                        <li>
+                            <a href="#"><i class="fas fa-headphones narbar__icon"></i>Hỗ trợ</a>
                         </li>
                         <li>
-                            <a><i class="fa fa-heart"></i>Trở thành người bán</a>
-                         </li>
+                            <a href="#"><i class="fa fa-heart narbar__icon"></i>Trở thành người bán</a>
+                        </li>
                     </ul>
-                     <ul class=" right" id="loginindex">
-                         <li> 
-                             <a href="login.html" >
-                                <i class="fa fa-user"></i> Đăng nhập
-                             </a>
-                         </li>
-                         <li> 
-                            <a href="create.html" >
-                                <i class="fa fa-user"></i> Đăng ký
+                    <ul class="navbartop__item" id="loginindex">
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-user narbar__icon"></i> Đăng nhập
+                            </a>
+                        </li>
+                        <li>
+                            <a href="create.html ">
+                                <i class="fa fa-user narbar__icon"></i> Đăng ký
                             </a>
                         </li>
 
                     </ul>
-               </div>
-
-
-            </div>
-        </div>
-
-    </navbartop>
-    <navbar>
-        <div class="container-fluid" style="background-color:#fcfcfc;padding:10px 0px;">
-            
-            <div class="container" >
-                <div class="container">
-                    <div class="navbar">
-                        <ul >
-                            <li>
-                                <a href="index.html">
-                                    <img src="image/logo.png" alt="">
-                                </a>
-                            </li>
-                           
-                        </ul >
-                        <div>
-                            <input type="text" id="seach">
-                            <i class="fas fa-search-dollar" onclick="seachSP()" style="font-size: 25px;padding-top: 10px;"></i>
-                        </div>
-                        <a href="cart.html">
-                            <i class="fas fa-cart-plus"></i>
-                            <p id="SLcard">0</p>
-                        </a>
-                        
-                    </div>
                 </div>
             </div>
         </div>
-    </navbar>
+    </div>
+    <div class="narbar-big">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <img src="image/logo.png" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="narbar__seach">
+                        <input type="text" id="seach">
+                        <i class="fas fa-search-dollar narbar__seach__item" onclick="seachSP()"></i>
+                    </div>
+                    <a href="cart.html">
+                        <i class="fas fa-cart-plus"></i>
+                        <p id="SLcard">0</p>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
     <tagtable>
         <div class="container">
              <div class="tagtable">

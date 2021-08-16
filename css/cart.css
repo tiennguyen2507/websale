@@ -17,3 +17,8 @@
     background-color: #3e78b2;
     border: 0px;
 }
+td{
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+}

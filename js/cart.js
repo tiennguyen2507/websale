@@ -16,8 +16,8 @@ function showcart() {
                     <td><img id="cardimage" src="${value.image}" ></td>
                     <td>${value.name}</td>
                     <td>${value.SL}</td>
-                    <td>${value.price}</td>
-                    <td>${value.TT}</td>
+                    <td>${value.price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")} VND</td>
+                    <td>${value.TT.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")} VND</td>
                 </tr> `
     }).join('')
     document.getElementById("showcart").innerHTML= cart
