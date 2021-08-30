@@ -6,173 +6,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>websale</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
-
 </head>
 
-<body onload="ShowSPFS(data)">
-    <div class="narbar-top-big">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="navbartop">
-                    <ul class="navbartop__item">
-                        <li>
-                            <a href="#"><i class="fas fa-headphones narbar__icon"></i>Hỗ trợ</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-heart narbar__icon"></i>Trở thành người bán</a>
-                        </li>
-                    </ul>
-                    <ul class="navbartop__item" id="loginindex">
-                        <li>
-                            <a href="login.html">
-                                <i class="fa fa-user narbar__icon"></i> Đăng nhập
-                            </a>
-                        </li>
-                        <li>
-                            <a href="create.html ">
-                                <i class="fa fa-user narbar__icon"></i> Đăng ký
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
+<body>
+    <div class="narbartop w100">
+        <div class="container">
+            <div class="navbartop__row">
+                <ul class="navbartop__row__item" data-aos="fade-right" data-aos-duration="2000">
+                    <li>
+                        <a href="#"><i class="fas fa-headphones narbar__icon"></i>Hỗ trợ</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-heart narbar__icon"></i>Trở thành người bán</a>
+                    </li>
+                </ul>
+                <ul class="navbartop__row__item" id="loginindex" data-aos="fade-left" data-aos-duration="2000">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-user narbar__icon"></i> Đăng nhập
+                        </a>
+                    </li>
+                    <li>
+                        <a href="create.html ">
+                            <i class="bx bxs-log-out narbar__icon"></i> Đăng ký
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="narbar-big">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="navbar">
-                    <ul>
-                        <li>
-                            <a href="index.html">
-                                <img src="image/logo.png" alt="">
-                            </a>
-                        </li>
-
-                    </ul>
-                    <div class="narbar__seach">
-                        <input type="text" id="seach">
+    <div class="narbar w100">
+        <div class="container">
+            <div class="navbar__row">
+                <div class="narbar__row__logo">
+                    <a href="index.html">
+                        <img src="image/logo.png" alt="">
+                </div>
+                <div class="narbar__row__seach">
+                    <input type="text" id="seach">
+                    <a href="#showSP">
                         <i class="fas fa-search-dollar narbar__seach__item" onclick="seachSP()"></i>
-                    </div>
-                    <a href="cart.html">
-                        <i class="fas fa-cart-plus"></i>
-                        <p id="SLcard">0</p>
+
                     </a>
-
                 </div>
-            </div>
+                <a href="cart.html" class="narbar__row__cart">
+                    <i class='bx bxs-cart narbar__row__cart__icon'></i>
+                    <div id="SLcard">0</div>
 
-        </div>
-    </div>
-    <div class="slide-big" data-aos="zoom-in" data-aos-duration="2000">
-        <div class="container">
-            <div class="slide">
-                <img id="slideimage" src="image/banner03.jpg" alt="">
+                </a>
+                <div class="narbar__row__toggle">
+                    <i class='bx bx-menu narbar__row__cart__icon'></i>
+                </div>
+
             </div>
         </div>
     </div>
-    <selectSP>
+    <div class="selectSP w100">
         <div class="container">
-            <div class="selectSP">
-                <select name="selectSP" id="selectSP" onchange="selectSP(this)">
-                    <option value="default">-Tất cả sản Phẩm-</option>
-                    <option value="phone">-điện thoại-</option>
-                    <option value="houseware">-Hàng gia dụng-</option>
-                    <option value="quanAo">-quần áo-</option>
-                </select>
-                <ul id="showSP"></ul>
-            </div>
+            <ul class="selectSP__row">
+                <li class="select__row__item">
+                    <a href="#showSP">
+                        <p>tất cả </p>
+                    </a>
+                </li>
+                <li class="select__row__item">
+                    <a href="#showSP">
+                        <p>Điện thoại</p>
+                    </a>
+                </li>
+                <li class="select__row__item">
+                    <a href="#showSP">
+                        <p>hàng gia dụng</p>
+                    </a>
+                </li>
+                <li class="select__row__item">
+                    <a href="#showSP">
+                        <p>quần áo</p>
+                    </a>
+                </li>
+
             </ul>
         </div>
-    </selectSP>
-    <showSP>
+    </div>
+    <div class="slide w100" data-aos="zoom-in" data-aos-duration="1000">
         <div class="container">
-            <div class="showSP">
-                <div class="row" id="showSPHTML">
-                    
-                </div>
+            <div class="slide__row">
+                <img id="slideimage" src="image/banner03.jpg" alt="">
+                <i class='bx bxs-chevron-left-circle produts-slide__button__left'></i>
+                <i class='bx bxs-chevron-right-circle produts-slide__button__right'></i>
             </div>
         </div>
-    </showSP>
-    <div class="container">
-        <div class="panner-center" >
+    </div>
 
-            <img src="image/banner-10.jpg" alt="" data-aos="fade-up-right" data-aos-duration="1000">
-            <img src="image/banner-10.jpg" alt="" data-aos="fade-up-left" data-aos-duration="1000">
+    <div id="showSP" class="w100">
+        <div class="container">
+            <div class="showSP__row" id="showSPHTML">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panner-center">
+
+            <img src="image/banner-10.jpg" alt="" data-aos="fade-up-right" data-aos-duration="500">
+            <img src="image/banner-10.jpg" alt="" data-aos="fade-up-left" data-aos-duration="500">
         </div>
 
     </div>
 
-    <showSP>
+    <!-- <div class="w100">
         <div class="container">
-            <div class="showSP">
-                <div class="row" id="produts-slide">
-                    
+            <div class="showSP produts-slide-big">
+                <div class="produts-slide__title" data-aos="zoom-in" data-aos-duration="500">
+                    <h1>top sản phẩm bán chạy</h1>
                 </div>
+                <div class="row" id="produts-slide" data-aos="zoom-in" data-aos-duration="500">
+                </div>
+                <i class='bx bxs-chevron-left-circle produts-slide__button__left'></i>
+                <i class='bx bxs-chevron-right-circle produts-slide__button__right'></i>
             </div>
         </div>
-    </showSP>
+    </div> -->
 
 
-    <div class="footer-big">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
+    <div class="footer">
+        <div class="container">
+            <div class="footer__row">
 
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-                        <div class="footer_one">
-                            <img src="image/logo.png" alt="">
-                            <p>Sản phẩm của shop chúng tôi đều là hàng thật đảm bảo chất lượng 100%. Chúng tôi hỗ trợ quý khách kiểm tra hàng hóa bằng bất cứ phương thức nào. Nếu có hàng giả, chúng
-                                tôi nguyện bồi hoàn gấp 100 lần cho quý khách. Quý khách hãy yên tâm mua sắm.</p>
-                        </div>
+                <div class="footer__row__item">
+                    <div class="footer_one">
+                        <img src="image/logo.png" alt="">
+                        <p>Sản phẩm của shop chúng tôi đều là hàng thật đảm bảo chất lượng 100%. Chúng tôi hỗ trợ quý khách kiểm tra hàng hóa bằng bất cứ phương thức nào. Nếu có hàng giả, chúng
+                            tôi nguyện bồi hoàn gấp 100 lần cho quý khách. Quý khách hãy yên tâm mua sắm.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-                        <div class="footer_two">
-                            <h1>Danh mục sản Phẩm</h1>
-                            <p> Điện thoại</p>
-                            <p>Đồ Gia dụng</p>
-                            <p>Quần Áo</p>
+                </div>
+                <div class="footer__row__item">
+                    <div class="footer_two">
+                        <h1>Danh mục sản Phẩm</h1>
+                        <p> Điện thoại</p>
+                        <p>Đồ Gia dụng</p>
+                        <p>Quần Áo</p>
 
-                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-                        <div class="footer_two">
-                            <h1>Thanh Toán</h1>
-                            <p> Thanh toán khi nhận hàng</p>
-                            <p>Chuyển khoản trực tiếp</p>
-                            <p>trả góp lãi xuất thấp</p>
+                </div>
+                <div class="footer__row__item">
+                    <div class="footer_two">
+                        <h1>Thanh Toán</h1>
+                        <p> Thanh toán khi nhận hàng</p>
+                        <p>Chuyển khoản trực tiếp</p>
+                        <p>trả góp lãi xuất thấp</p>
 
-                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-                        <div class="footer_four">
-                            <h1>Góp ý</h1>
-                            <p>Mọi ý kiến đóng góp,phản ánh cũng như thức mắt xin liên hệ qua các phướng thức sau:</p>
-                            <div>
-                                <i class="fas fa-phone-square"></i>
-                                <i class="fab fa-facebook"></i>
-                                <i class="fas fa-envelope"></i>
-                                <i class="fas fa-map-marked-alt"></i>
-
-                            </div>
+                </div>
+                <div class="footer__row__item">
+                    <div class="footer_four">
+                        <h1>Góp ý</h1>
+                        <p>Mọi ý kiến đóng góp,phản ánh cũng như thức mắt xin liên hệ qua các phướng thức sau:</p>
+                        <div>
+                            <i class="fas fa-phone-square footer_icon"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-map-marked-alt"></i>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="foooter_down">
+                <p> thực hiện bởi:Nguyễn Lê Đình Tiên</p>
+            </div>
         </div>
-        <div class="foooter_down">
-            <p> thực hiện bởi:Nguyễn Lê Đình Tiên</p>
-        </div>
+
     </div>
     <!-- <img src="image/SP/aopolo.jpg" alt=""> -->
 
-    <div class="sale" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000">
+    <div class="sale" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-duration="1000">
         <i class='bx bx-x-circle sale__icon' onclick="saleClose()"></i>
         <img src="image/sale-icon.png" alt="" class="bx-tada">
 
@@ -184,7 +194,6 @@
 
 
 </body>
-<script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 <script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
 <script src="js/data.js"></script>

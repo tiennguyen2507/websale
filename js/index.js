@@ -1,6 +1,7 @@
+
+// ===============slide====================//
 var slide = ["image/banner01.jpg", "image/banner02.jpg", "image/banner03.jpg", "image/banner04.jpg"]
 var index = 0
-
 function slideimage() {
     index++
     if (index == 4) {
@@ -8,8 +9,24 @@ function slideimage() {
     }
     document.getElementById('slideimage').src = slide[index]
 }
-setInterval(slideimage, 4000)
-////get local///--------------------------------
+setInterval(slideimage, 5000)
+const ButtonBackSlide = document.querySelector('.produts-slide__button__left')
+ButtonBackSlide.addEventListener('click', slideimage)
+const ButtonNextSlide = document.querySelector('.produts-slide__button__right')
+ButtonNextSlide.addEventListener('click', slideimage)
+
+
+
+//============click toggle=====================//
+
+const toggle = document.querySelector('.narbar__row__toggle')
+toggle.addEventListener('click', () => {
+    document.querySelector('.selectSP').classList.toggle('selectSP__active')
+
+})
+
+
+//============get local=======================//
 var localdata = localStorage.getItem('data')
 data = JSON.parse(localdata)
 var locallogin = localStorage.getItem('login')
@@ -17,32 +34,14 @@ login = JSON.parse(locallogin)
 var localcart = localStorage.getItem('dataCart')
 dataCart01 = JSON.parse(localcart)
 
-// -----------------------------------
 
-function selectSP(obj) {
-    var value = obj.value
-    var show = []
-    for (let i = 0; i < data.length; i++) {
-        if (value == data[i].category) {
-            show.push(data[i])
-        }
-    }
-    var show01 = show.map(value => {
-        return `<li>
-               <a href=""> ${value.nameSP}</a>
-              </li>`
-    }).join('')
-    document.getElementById("showSP").innerHTML = show01
-    if (value == "default") {
-        ShowSPFS(data)
-    } else {
-        ShowSPFS(show)
-    }
-}
+
+
+
 var showSP = []
 function ShowSPFS(data) {
     showSP = data.map(value => {
-        return ` <div class=" col-xs-6 col-sm-6 col-md-6 col-lg-3  " data-aos="zoom-in" data-aos-duration="1500">
+        return ` <div class=" showSP__row__item " id='card__row' data-aos="zoom-in" data-aos-duration="500">
                     <div class='card'>
                         <img src=${value.image} alt="">
                         <a href="detailsSP.html" onclick="adddetailsSP(${value.id})">${value.nameSP}</a>
@@ -63,7 +62,7 @@ function ShowSPFS(data) {
     }).join('')
     document.getElementById("showSPHTML").innerHTML = showSP
     document.getElementById("produts-slide").innerHTML = showSP
-    
+
 
 
     if (login[0].status === true) {
@@ -73,11 +72,12 @@ function ShowSPFS(data) {
 
     if (login[0].status == true) {
         var login01 = `<li> 
-                             <a  >
+                             <p  class='userLogin' >
                                    ${login[0].name}
-                             </a>
+                             </p>
                         </li>
-                        <li> 
+                         <li class ='userLogout'> 
+                            <i class='bx bx-log-out narbar__icon'></i>
                             <a  href="index.html"  onclick = 'logout()' >
                                      Đăng xuất
                             </a>
@@ -146,6 +146,8 @@ function seachSP() {
 
     ShowSPFS(seach)
 }
+
+
 
 
 

@@ -5,77 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng ký</title>
-    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/addSP.css">
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
-    <script src="js/data.js"></script>
-    <script src="js/addSP.js"></script>
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/create.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+   
+   
 </head>
 <body>
     <div class="narbar-top-big">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="navbartop">
-                    <ul class="navbartop__item">
-                        <li>
-                            <a href="#"><i class="fas fa-headphones narbar__icon"></i>Hỗ trợ</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-heart narbar__icon"></i>Trở thành người bán</a>
-                        </li>
-                    </ul>
-                    <ul class="navbartop__item" id="loginindex">
-                        <li>
-                            <a href="login.html">
-                                <i class="fa fa-user narbar__icon"></i> Đăng nhập
-                            </a>
-                        </li>
-                        <li>
-                            <a href="create.html ">
-                                <i class="fa fa-user narbar__icon"></i> Đăng ký
-                            </a>
-                        </li>
 
-                    </ul>
-                </div>
+        <div class="container">
+            <div class="navbartop">
+                <ul class="navbartop__item" data-aos="fade-right" data-aos-duration="2000">
+                    <li>
+                        <a href="#"><i class="fas fa-headphones narbar__icon"></i>Hỗ trợ</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-heart narbar__icon"></i>Trở thành người bán</a>
+                    </li>
+                </ul>
+                <ul class="navbartop__item" id="loginindex" data-aos="fade-left" data-aos-duration="2000">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-user narbar__icon"></i> Đăng nhập
+                        </a>
+                    </li>
+                    <li>
+                        <a href="create.html ">
+                            <i class="fa fa-user narbar__icon"></i> Đăng ký
+                        </a>
+                    </li>
+
+                </ul>
             </div>
         </div>
+
     </div>
     <div class="narbar-big">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="navbar">
-                    <ul>
-                        <li>
-                            <a href="index.html">
-                                <img src="image/logo.png" alt="">
-                            </a>
-                        </li>
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="image/logo.png" alt="">
+                        </a>
+                    </li>
 
-                    </ul>
-                    <div class="narbar__seach">
-                        <input type="text" id="seach">
-                        <i class="fas fa-search-dollar narbar__seach__item" onclick="seachSP()"></i>
-                    </div>
-                    <a href="cart.html">
-                        <i class="fas fa-cart-plus"></i>
-                        <p id="SLcard">0</p>
+                </ul>
+                <div class="narbar__seach">
+                    <input type="text" id="seach">
+                    <a href="#showSP">
+                        <i class="fas fa-search-dollar narbar__seach__item" onclick="seachSP() "></i>
                     </a>
-
                 </div>
-            </div>
+                <a href="cart.html">
+                    <i class='bx bxs-cart narbarCart__icon' ></i>
+                    <div id="SLcard">0</div>
+                </a>
 
+            </div>
         </div>
     </div>
     <addSP>
         
-        <div class="container">
-           <div class="addSP">
-              
+        <div class="container" data-aos="zoom-in" data-aos-duration="500">
+           <div class="addSP" >
                <formmm >
                     <p>Đăng Ký</p>
                    <div>
@@ -96,14 +93,20 @@
                    </div>
                     <button onclick="create()">Đăng Ký</button>
                </formmm>
-               
-
-
            </div>
         </div>
         
     </addSP>
     
 </body>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/3a7887013c.js" crossorigin="anonymous"></script>
+<script src="js/data.js"></script>
+<script src="js/addSP.js"></script>
+<script src="js/create.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
         
 </html>
